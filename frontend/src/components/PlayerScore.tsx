@@ -1,6 +1,16 @@
 import React from 'react'
-import { Button } from './ui/button';
-import { Input } from './ui/input';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+// import { Label } from '@/components/ui/label';
+// import {
+//   Form,
+//   FormControl,
+//   FormField,
+//   FormItem,
+//   FormLabel,
+//   FormMessage,
+// } from "@/components/ui/form"
+// import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import Cell from './Cell';
 
 const PlayerScore = ({playerName, playerScore, handleSubmit, submitBtnRef}:{
@@ -27,7 +37,7 @@ const PlayerScore = ({playerName, playerScore, handleSubmit, submitBtnRef}:{
         <div className='mt-6'>
           <form className='grid w-full lg:grid-cols-6' onSubmit={handleSubmit}>
             <label htmlFor='player1Input' className='col-span-2'>{ playerName }</label>
-            <Input className='bg-white text-black col-span-2' type='number' id='player1Input' name='player1Input'></Input>
+            <Input className='bg-white text-black col-span-2' type='radio' id='player1Input' name='player1Input'></Input>
             <Button className='col-span-2 hover:bg-slate-600' variant="outline" ref={submitBtnRef}>Submit</Button>
           </form>
 
