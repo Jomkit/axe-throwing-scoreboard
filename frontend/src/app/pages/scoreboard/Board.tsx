@@ -1,6 +1,6 @@
 import { useScore } from '@/hooks/useScore.ts';
 import React from 'react';
-import PlayerScore from './PlayerScore';
+import PlayerScore from '../../../components/PlayerScore';
 
 
 function Board() {
