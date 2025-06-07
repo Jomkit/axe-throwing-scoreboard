@@ -3,10 +3,10 @@ import { NavLink } from 'react-router';
 const Navbar = () => {
   return (
     <div className='flex flex-row justify-between w-full'>
-      <NavLink to='/'>
+      <NavLink to='/' viewTransition>
         Home
       </NavLink>
-      <NavLink to="/scoreboard">
+      <NavLink to="/scoreboard" viewTransition>
         Scoreboard
       </NavLink>
     </div>
